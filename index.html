@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Xenon | Client Platform</title>
+  <meta name="description" content="Xenon account platform for account management, key redemption, and subscription access.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body class="landing-page">
+  <div class="bg-orb bg-orb-a"></div>
+  <div class="bg-orb bg-orb-b"></div>
+
+  <header class="topbar">
+    <a class="brand" href="index.html">
+      <img src="assets/img/console.png" alt="Xenon logo">
+      <span>Xenon</span>
+    </a>
+    <nav class="nav-links">
+      <a href="#features">Features</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="nav-actions">
+      <a class="btn ghost" href="login.html">Log In</a>
+      <a class="btn primary" href="register.html">Get Started</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">KEY MANAGEMENT PLATFORM</p>
+        <h1>One place for your account, key, and access status.</h1>
+        <p class="lead">
+          Built for your Xenon workflow. Create an account, redeem your key, and check
+          active time left in one clean dashboard.
+        </p>
+        <div class="hero-cta">
+          <a class="btn primary big" href="register.html">Create Account</a>
+          <a class="btn ghost big" href="login.html">I Have an Account</a>
+        </div>
+      </div>
+      <div class="hero-panel glass">
+        <div class="panel-top">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+        <h3>Live License Snapshot</h3>
+        <ul class="stat-list">
+          <li><span>Plan</span><strong>No Plan Selected</strong></li>
+          <li><span>Key Status</span><strong class="not-active">Not Active</strong></li>
+          <li><span>Expires</span><strong>-</strong></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="features" class="section">
+      <h2>What You Get</h2>
+      <div class="grid three">
+        <article class="card">
+          <h3>Fast Account Access</h3>
+          <p>Register, verify, and sign in quickly with a clean flow made for launcher users.</p>
+        </article>
+        <article class="card">
+          <h3>Key Redeem + Tracking</h3>
+          <p>Attach purchased keys to your account and instantly see subscription expiration.</p>
+        </article>
+        <article class="card">
+          <h3>App Login Guard</h3>
+          <p>Only users with valid active license access the WinForms client.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="pricing" class="section">
+      <h2>Plans</h2>
+      <div class="pricing-grid">
+        <article class="price-card">
+          <h3>Daily</h3>
+          <p class="price">$1.36<span>/24 hours</span></p>
+          <ul>
+            <li>1 day access</li>
+            <li>Full executor features</li>
+            <li>Email key delivery</li>
+          </ul>
+          <a class="btn ghost block" href="register.html">Choose Daily</a>
+        </article>
+        <article class="price-card">
+          <h3>7 Days</h3>
+          <p class="price">$4.28<span>/week</span></p>
+          <ul>
+            <li>7 day access</li>
+            <li>Full executor features</li>
+            <li>Email key delivery</li>
+          </ul>
+          <a class="btn ghost block" href="register.html">Choose 7 Days</a>
+        </article>
+        <article class="price-card">
+          <h3>Monthly</h3>
+          <p class="price">$12.84<span>/30 days</span></p>
+          <ul>
+            <li>30 day access</li>
+            <li>Full executor features</li>
+            <li>Email key delivery</li>
+          </ul>
+          <a class="btn ghost block" href="register.html">Choose Monthly</a>
+        </article>
+        <article class="price-card featured">
+          <p class="plan-badge">BEST VALUE</p>
+          <h3>90 Days</h3>
+          <p class="price">$25.68<span>/3 months</span></p>
+          <ul>
+            <li>90 day access</li>
+            <li>Full executor features</li>
+            <li>Email key delivery</li>
+          </ul>
+          <a class="btn primary block" href="register.html">Choose 90 Days</a>
+        </article>
+        <article class="price-card">
+          <h3>Yearly</h3>
+          <p class="price">$64.83<span>/12 months</span></p>
+          <ul>
+            <li>365 day access</li>
+            <li>Full executor features</li>
+            <li>Email key delivery</li>
+          </ul>
+          <a class="btn ghost block" href="register.html">Choose Yearly</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="faq" class="section faq">
+      <h2>Quick Answers</h2>
+      <div class="grid two">
+        <article class="card">
+          <h3>How does key activation work?</h3>
+          <p>Buy a plan, receive a key, redeem it in your dashboard, and your app login unlocks automatically.</p>
+        </article>
+        <article class="card">
+          <h3>Can I use this with my subdomain?</h3>
+          <p>Yes. Host this on your Xenon subdomain, and connect the API domain separately.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Xenon Platform. All rights reserved.</p>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

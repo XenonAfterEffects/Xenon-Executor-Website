@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard | Xenon</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body class="dashboard-page">
+  <div class="dashboard-layout">
+    <aside class="sidebar glass">
+      <a class="brand auth-brand" href="index.html">
+        <img src="assets/img/console.png" alt="Xenon logo">
+        <span>Xenon</span>
+      </a>
+      <nav class="dash-nav">
+        <a class="active" href="dashboard.html">Overview</a>
+        <a href="#" aria-disabled="true">Billing</a>
+        <a href="#" aria-disabled="true">Devices</a>
+      </nav>
+      <button id="logoutBtn" class="btn ghost block">Log Out</button>
+    </aside>
+
+    <main class="dash-main">
+      <header class="dash-header">
+        <div>
+          <p class="eyebrow">ACCOUNT</p>
+          <h1>License Dashboard</h1>
+        </div>
+        <div class="user-pill">
+          <span id="accountBadge">Guest</span>
+        </div>
+      </header>
+
+      <section class="grid two">
+        <article class="card key-card">
+          <h2>Current License</h2>
+          <p class="tiny-label">Status</p>
+          <p id="licenseStatus" class="status pending">Checking...</p>
+          <div class="meta-grid">
+            <div>
+              <p class="tiny-label">Plan</p>
+              <p id="licensePlan">-</p>
+            </div>
+            <div>
+              <p class="tiny-label">Expires</p>
+              <p id="licenseExpiry">-</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <h2>Redeem Key</h2>
+          <form id="redeemForm" class="form-inline">
+            <input id="redeemInput" type="text" placeholder="Enter your key" required>
+            <button class="btn primary" type="submit">Redeem</button>
+          </form>
+          <p id="redeemMessage" class="form-message"></p>
+        </article>
+      </section>
+
+      <section class="card">
+        <h2>How This Connects To App Login</h2>
+        <p class="lead small">
+          Your WinForms login should call your API and only allow app access when this account
+          has an active license. If expired, block login.
+        </p>
+      </section>
+    </main>
+  </div>
+
+  <script src="assets/js/api.js"></script>
+  <script src="assets/js/dashboard.js"></script>
+</body>
+</html>

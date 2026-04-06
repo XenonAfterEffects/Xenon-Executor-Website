@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Register | Xenon</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body class="auth-page">
+  <div class="bg-orb bg-orb-a"></div>
+  <div class="bg-orb bg-orb-b"></div>
+
+  <main class="auth-shell">
+    <section class="auth-panel glass">
+      <a class="brand auth-brand" href="index.html">
+        <img src="assets/img/console.png" alt="Xenon logo">
+        <span>Xenon</span>
+      </a>
+      <h1>Create account</h1>
+      <p class="auth-sub">Set up your Xenon account to redeem and manage keys.</p>
+
+      <form id="registerForm" class="form-stack">
+        <label>
+          <span>Username</span>
+          <input type="text" name="username" minlength="3" maxlength="24" required>
+        </label>
+        <label>
+          <span>Email</span>
+          <input type="email" name="email" autocomplete="email" required>
+        </label>
+        <label>
+          <span>Password</span>
+          <input type="password" name="password" autocomplete="new-password" minlength="8" required>
+        </label>
+        <button type="submit" class="btn primary block">Create Account</button>
+      </form>
+
+      <p id="formMessage" class="form-message"></p>
+      <p class="small-note">Already have an account? <a href="login.html">Log in</a></p>
+    </section>
+  </main>
+
+  <script src="assets/js/api.js"></script>
+  <script src="assets/js/auth.js"></script>
+</body>
+</html>
