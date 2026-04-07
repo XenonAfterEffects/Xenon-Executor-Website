@@ -1,5 +1,5 @@
 window.XenonApi = (function () {
-  var API_BASE = window.XENON_API_BASE || "https://xenonexecutor-api.onrender.com";
+  var API_BASE = window.XENON_API_BASE || "https://jn9opfewn9iovrewniov1api.xenon.mathcalculator101.xyz";
 
   function withDefaults(options) {
     var cfg = options || {};
