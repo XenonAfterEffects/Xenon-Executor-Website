@@ -34,6 +34,12 @@ window.XenonApi = (function () {
   }
 
   return {
+    getPlans: function () {
+      return request("/plans", {
+        method: "GET"
+      });
+    },
+
     register: function (payload) {
       return request("/auth/register", {
         method: "POST",
@@ -60,6 +66,14 @@ window.XenonApi = (function () {
       return request("/me/license", {
         method: "GET",
         headers: authHeader(token)
+      });
+    },
+
+    buyPlan: function (token, planCode) {
+      return request("/billing/buy", {
+        method: "POST",
+        headers: authHeader(token),
+        body: JSON.stringify({ planCode: planCode })
       });
     }
   };
